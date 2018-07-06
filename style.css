@@ -1,0 +1,109 @@
+.img{
+    display: block;
+    border: 1px solid #ccc;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #f3f3f3;
+    overflow: hidden;
+}
+.tabs-list{
+    display: flex;
+    margin-top: .8rem;
+    background: #fff;
+}
+.tabs-list li{
+    flex: 1;
+    padding: .4rem 0 .8rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.tabs-list li.active{
+    color: #f60;
+}
+.tabs-list li span{
+    padding-bottom: .2rem;
+    border-bottom: .05rem solid transparent;
+}
+.tabs-list li.active span {
+    border-color: #f60;
+}
+.tab-item{
+    margin: .6rem 1rem;
+    padding: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 .5rem #ccc;
+    background: #fff;
+}
+.tab-item dl{
+    display: flex;
+    justify-content: space-between;
+}
+.tab-item dl dt{
+    flex: 1;
+    margin-right: .8rem;
+}
+.tab-item dl dt .img{
+    width: 100%;
+    height: 100%;
+    /* height: auto; */
+}
+.tab-item dl dd{
+    flex: 2.5;
+    color: #333;
+    font-size: 1.6rem;
+}
+.tab-item dl dd p{
+    color: #666;
+    font-size: 1rem;
+}
+.tab-item dl dd span{
+    margin-top: .1rem;
+    padding: .2rem;
+    background: #f60;
+    color: #fff;
+    font-size: .8rem;
+    border-radius: .4rem;
+}
+.tab-item dl dd span::after, .tab-item dl dd span::before{
+    content: '';
+    clear: both;
+}
+.tab-item .imgs{
+    display: flex;
+    justify-content: space-between;
+    margin: .8rem 0;
+}
+.tab-item .imgs li{
+    flex-basis: 31%;
+}
+.tab-item .imgs li .img{
+    width: 100%;
+    height: 4rem;
+}
+.tab-item .bottom-letter{
+    display: flex;
+    align-items: center;
+}
+.tab-item .bottom-letter div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.tab-item .bottom-letter div span{
+    font-weight: normal;
+    color: #f60;
+}
+.tab-item .bottom-letter button{
+    margin-left: 1rem;
+    padding: .2rem 1rem;
+    background: #f60;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+    border: none;
+    outline: none;
+}
